@@ -279,24 +279,14 @@ export default {
   padding: 20px;
 }
 
-.header {
+header {
   text-align: center;
   margin-bottom: 30px;
 }
 
-.header h1 {
+header h1 {
   margin-bottom: 20px;
-  color: #333;
-}
-
-.color-hex {
-  font-family: "Courier New", monospace;
-  font-weight: bold;
-  background: #f0f0f0;
-  padding: 8px 12px;
-  border-radius: 4px;
-  min-width: 90px;
-  text-align: center;
+  color: #ffffff;
 }
 
 .generateColor-btn {
@@ -323,38 +313,6 @@ export default {
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
-
-.palette-type-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 10px;
-}
-
-.type-btn {
-  padding: 10px 20px;
-  background-color: #f0f0f0;
-  color: #333;
-  border: 2px solid #ddd;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 14px;
-  transition: all 0.2s ease;
-  flex: 1;
-  min-width: 120px;
-}
-
-.type-btn:hover {
-  background-color: #e0e0e0;
-  border-color: #667eea;
-}
-
-.type-btn.active {
-  background-color: #667eea;
-  color: white;
-  border-color: #667eea;
-  font-weight: bold;
 }
 
 .palette-generator {
@@ -427,28 +385,6 @@ export default {
   font-size: 12px;
   transition: background-color 0.2s;
   color: black;
-}
-
-.format-switch {
-  display: flex;
-  gap: 10px;
-  margin-left: 15px;
-}
-
-.format-btn {
-  padding: 8px 16px;
-  border: 2px solid #667eea;
-  background-color: white;
-  color: #667eea;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 14px;
-}
-
-.format-btn.active {
-  background-color: #667eea;
-  color: white;
-  font-weight: bold;
 }
 
 .preview-section {
