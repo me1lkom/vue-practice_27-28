@@ -196,13 +196,11 @@ export default {
         const parsedData = JSON.parse(savedData);
         console.log("Загружены данные:", parsedData);
 
-        // Загружаем количество цветов
         if (parsedData.colorCount !== undefined) {
           colorCount.value = Number(parsedData.colorCount);
           console.log("Загружено количество цветов:", colorCount.value);
         }
 
-        // Загружаем тему
         if (parsedData.darkMode !== undefined) {
           darkMode.value = Boolean(parsedData.darkMode);
           console.log("Загружена тема:", darkMode.value);
@@ -213,7 +211,6 @@ export default {
             console.log("Загружен формат цвета:", colorFormat.value);
         }
 
-        // Загружаем палитру
         if (
           Array.isArray(parsedData.palette) &&
           parsedData.palette.length > 0
@@ -445,6 +442,6 @@ label {
 
 .theme-button {
   border-radius: 5px;
-  background-color: azure;
+  background-color: rgb(255, 255, 255);
 }
 </style>
